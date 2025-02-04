@@ -1,28 +1,22 @@
-# Proyek Analisis Data: Air Quality Dataset
+# Dicoding Collection Dashboard ✨
 
-## Deskripsi
-Proyek ini bertujuan untuk menganalisis tren kualitas udara dan faktor-faktor yang memengaruhinya menggunakan dataset Air Quality.
+## Setup Environment - Anaconda
+```
+conda create --name main-ds python=3.9
+conda activate main-ds
+pip install -r requirements.txt
+```
 
-## Cara Menjalankan Dashboard
-1. Instal dependensi:
-   ```bash
-   pip install -r requirements.txt
-    ```
-2. Jalankan aplikasi Streamlit:
-   ```bash
-    python -m streamlit run dashboard/dashboard.py 
-    ```
-3. Buka browser dan akses URL yang ditampilkan di terminal.
+## Setup Environment - Shell/Terminal
+```
+mkdir air-quality-dashboard
+cd air-quality-dashboard
+pipenv install
+pipenv shell
+pip install -r requirements.txt
+```
 
-# Struktur Direktori
-submission/
-├───dashboard/
-│   ├───main_data.csv
-│   └───dashboard.py
-├───data/
-│   ├───data_1.csv
-│   └───data_2.csv
-├───notebook.ipynb
-├───README.md
-└───requirements.txt
-
+## Run steamlit app
+```
+streamlit run dashboard/dashboard.py
+```
